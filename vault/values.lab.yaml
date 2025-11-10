@@ -19,3 +19,5 @@ server:
 
 ui:
   enabled: true
+  serviceType: NodePort
+  serviceNodePort: 32000
