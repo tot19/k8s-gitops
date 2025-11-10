@@ -4,10 +4,14 @@ global:
 server:
   ha:
     enabled: true
-    replicas: 5
+    replicas: 3
     raft:
       enabled: true
       setNodeId: true
+
+  affinity: {}
+
+  tolerations: []
 
   dataStorage:
     enabled: true
