@@ -13,11 +13,11 @@ spec:
   source:
     repoURL: https://github.com/tot19/k8s-gitops.git
     targetRevision: main
-    path: vault/vault     # <- this is the chart directory you pulled
+    path: vault
     helm:
       releaseName: vault
       valueFiles:
-        - ../values.yaml
+        - values.yaml
 
   syncPolicy:
     automated:
