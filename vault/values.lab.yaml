@@ -8,6 +8,9 @@ server:
     raft:
       enabled: true
       setNodeId: true
+  image:
+    repository: hashicorp/vault
+    tag: "1.21.0"
 
   affinity: {}
 
