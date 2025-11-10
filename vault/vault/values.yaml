@@ -4,7 +4,7 @@ global:
 server:
   ha:
     enabled: true
-    replicas: 3
+    replicas: 5
     raft:
       enabled: true
       setNodeId: true
@@ -12,6 +12,10 @@ server:
   dataStorage:
     enabled: true
     size: 5Gi
+
+  service:
+    type: ClusterIP
+    port: 8200
 
 ui:
   enabled: true
