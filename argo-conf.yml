@@ -17,7 +17,7 @@ spec:
     helm:
       releaseName: vault
       valueFiles:
-        - values.yaml
+        - values.lab.yaml
 
   syncPolicy:
     automated:

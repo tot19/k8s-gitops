@@ -1,0 +1,21 @@
+global:
+  enabled: true
+
+server:
+  ha:
+    enabled: true
+    replicas: 5
+    raft:
+      enabled: true
+      setNodeId: true
+
+  dataStorage:
+    enabled: true
+    size: 5Gi
+
+  service:
+    type: ClusterIP
+    port: 8200
+
+ui:
+  enabled: true
